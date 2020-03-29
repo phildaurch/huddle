@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap");
+body {
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1440;
+  margin: auto;
+  padding: 60px;
+}
+.desc {
+  padding: 0 60px;
+}
+.content img {
+  width: 40vw;
+}
+.desc button {
+  padding: 20px 65px;
+  font-size: 16px;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  margin: 20px 0;
+  background-color: white;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-left: 50px;
+  align-self: flex-start;
+}
+.social {
+  align-self: flex-end;
+  display: flex;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.social span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .desc {
+    padding: 10px;
+    text-align: center;
+  }
+  .desc h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .social {
+    align-self: center;
+    margin: 10px 0;
+  }
+  .content img {
+    width: 90%;
+    margin: auto;
+  }
+  .logo {
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 40px;
+  }
+  body {
+    background-image: url("./images/bg-mobile.svg");
+    background-size: contain;
+  }
+  .desc button {
+    padding: 10px 80px;
+  }
+}
